@@ -1,302 +1,121 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aelyndor RPG</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Georgia', serif;
-      background-color: #0e0e0e;
-      color: #e2e2e2;
-    }
-    header {
-      background-color: #1b1b1b;
-      padding: 20px;
-      text-align: center;
-      border-bottom: 2px solid #444;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      background-color: #141414;
-      border-bottom: 1px solid #333;
-    }
-    nav a {
-      color: #e2e2e2;
-      text-decoration: none;
-      padding: 15px 25px;
-      display: inline-block;
-    }
-    nav a:hover {
-      background-color: #292929;
-    }
-    section {
-      max-width: 900px;
-      margin: 30px auto;
-      padding: 20px;
-      background-color: #1a1a1a;
-      border: 1px solid #333;
-      border-radius: 8px;
-    }
-    h1, h2, h3 {
-      color: #f5f5f5;
-    }
-    details {
-      margin-bottom: 15px;
-    }
-    summary {
-      font-weight: bold;
-      cursor: pointer;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Misterium Ignis</title>
+    <style>
+        body {
+            background-color: #1d1f20;
+            color: #f2f2f2;
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 50px;
+        }
+        h1 {
+            font-size: 3em;
+            color: #e74c3c;
+        }
+        p {
+            font-size: 1.2em;
+            color: #bdc3c7;
+            line-height: 1.5;
+            margin: 20px 0;
+        }
+        .button {
+            background-color: #e74c3c;
+            color: #fff;
+            border: none;
+            padding: 15px 30px;
+            font-size: 1.2em;
+            margin: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+        .button:hover {
+            background-color: #c0392b;
+        }
+        .section {
+            margin-top: 40px;
+        }
+        .section h2 {
+            color: #e74c3c;
+            font-size: 2em;
+        }
+    </style>
 </head>
 <body>
-  <header>
-    <h1>AELYNDOR RPG</h1>
-    <p>Entre o esquecimento e a verdade, nasce o herói.</p>
-  </header>
+    <div class="container">
+        <h1>Misterium Ignis</h1>
+        <p>Em um mundo onde três luas regem os ciclos da alma, algo começou a falhar. Pessoas desaparecem... e ninguém se lembra delas. Apenas alguns poucos, nascidos sob a lua vermelha eclipsada, carregam a maldição — ou bênção — de lembrar daquilo que o mundo esqueceu.</p>
+        <p>Você é um desses. Escolhido não pelos deuses, mas pelo vazio entre eles.</p>
+        <p>Em Aelyndor, os deuses forjam impérios e manipulam destinos. Mas e se a verdade for diferente? E se a morte for liberdade? E se o verdadeiro inimigo não for o deus da morte... mas os deuses da vida?</p>
+        <p>Viaje por reinos em guerra, florestas cantantes, cidades flutuantes e ruínas esquecidas. Descubra segredos proibidos, desafie o panteão e decida o destino do ciclo das almas.</p>
+        <p>Você não é apenas um aventureiro. Você é uma lembrança viva daquilo que não deveria existir.</p>
 
-  <nav>
-    <a href="#guia">Guia do Jogo</a>
-    <a href="#racas">Raças</a>
-    <a href="#skills">Skills</a>
-    <a href="#afinidades">Afinidades</a>
-  </nav>
+        <div class="section">
+            <a href="#afinidades" class="button">Afinidades</a>
+            <a href="#classe" class="button">Classe</a>
+            <a href="#guerreiro" class="button">Guerreiro</a>
+            <a href="#assassino" class="button">Assassino</a>
+            <a href="#tank" class="button">Tank</a>
+            <a href="#monge" class="button">Monge</a>
+            <a href="#bruxo" class="button">Bruxo</a>
+            <a href="#mago" class="button">Mago</a>
+        </div>
 
-  <section id="guia">
-    <h2>Guia do Jogo</h2>
-    <p>Bem-vindo ao mundo sombrio e misterioso de Aelyndor. Aqui você encontra todas as regras, elementos e informações para jogar neste universo mégico dominado por deuses traiçoeiros, heróis esquecidos e segredos lunares.</p>
-  </section>
+        <div id="afinidades" class="section">
+            <h2>Afinidades</h2>
+            <p>A Essência : Escolha Sua Afinidade Primordial ou elemental...</p>
+            <p>... [Conteúdo das Afinidades] ...</p>
+        </div>
 
-  <section id="racas">
-    <h2>Raças</h2>
-    <details>
-      <summary>Humanos</summary>
-      <p>Versáteis e ambiciosos. Sub-raças: Nenhuma. Origem: Elvanar.</p>
-    </details>
-    <details>
-      <summary>Elfos</summary>
-      <p>Conectados à magia. Sub-raças: Elfo da Floresta, Meio-Elfo, Elfo das Trevas.</p>
-    </details>
-    <details>
-      <summary>Anões</summary>
-      <p>Fortes e orgulhosos. Sub-raças: Anão da Montanha, da Caverna e da Planície.</p>
-    </details>
-    <details>
-      <summary>Orcs</summary>
-      <p>Tribais e resistentes. Sub-raças: Clãs diversos com focos em força e honra.</p>
-    </details>
-    <details>
-      <summary>Reptilianos</summary>
-      <p>Ligados à natureza e ao ciclo. Sub-raças: Jacaré, Crocodilo, Lagartixa, Komodo.</p>
-    </details>
-    <details>
-      <summary>Tritões</summary>
-      <p>Guardiões marinhos. Sub-raças: Sofisticado, Encantador, Inquisidor.</p>
-    </details>
-    <details>
-      <summary>Dragonatos</summary>
-      <p>Descendentes dracônicos. Sub-raças: Elementais de Fogo, Água, Ar e Terra.</p>
-    </details>
-    <details>
-      <summary>Gnomos</summary>
-      <p>Curiosos e caóticos. Sub-raças: Pé-Leve e Coração Forte.</p>
-    </details>
-    <details>
-      <summary>Esqueletos</summary>
-      <p>Conscientes após a morte. Sub-raças: Engenhoso, Devorador, Robusto, Sofisticado.</p>
-    </details>
-  </section>
+        <div id="classe" class="section">
+            <h2>Classe</h2>
+            <p>Escolha sua classe: Guerreiro, Assassino, Tank, Monge, Bruxo, Mago.</p>
+        </div>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <p>As habilidades do jogo se dividem entre físicas (usam Energia) e mágicas (usam Mana). Cada classe possui um conjunto de skills baseado em sua especialização.</p>
-    <!-- Aqui você pode adicionar listas organizadas por classe depois -->
-  </section>
+        <div id="guerreiro" class="section">
+            <h2>Guerreiro</h2>
+            <p>- Ganha 3 pontos a mais de CONSTITUIÇÃO...</p>
+            <p>... [Detalhes do Guerreiro] ...</p>
+        </div>
 
-  <section id="afinidades">
-    <h2>Afinidades</h2>
-    <details>
-      <summary>Fogo</summary>
-      <p>Dano explosivo, fraqueza a Água.</p>
-    </details>
-    <details>
-      <summary>Água</summary>
-      <p>Controle, cura, fraqueza a Eletricidade.</p>
-    </details>
-    <details>
-      <summary>Terra</summary>
-      <p>Defesa e resistência. Fraca contra Fogo.</p>
-    </details>
-    <details>
-      <summary>Ar</summary>
-      <p>Mobilidade, dano rápido. Fraca contra Terra.</p>
-    </details>
-    <details>
-      <summary>Psíquico</summary>
-      <p>Confusão e controle mental. Fraco contra divino.</p>
-    </details>
-    <details>
-      <summary>Divino</summary>
-      <p>Cura e bênçãos. Fraco contra magias profanas.</p>
-    </details>
-    <details>
-      <summary>Sombras</summary>
-      <p>Corrompe e enfraquece. Vulnerável à luz pura.</p>
-    </details>
-  </section>
+        <div id="assassino" class="section">
+            <h2>Assassino</h2>
+            <p>- Ganha a skill "Furtividade"...</p>
+            <p>... [Detalhes do Assassino] ...</p>
+        </div>
+
+        <div id="tank" class="section">
+            <h2>Tank</h2>
+            <p>- Recebe 6 pontos de CONSTITUIÇÃO...</p>
+            <p>... [Detalhes do Tank] ...</p>
+        </div>
+
+        <div id="monge" class="section">
+            <h2>Monge</h2>
+            <p>- Se move 5 metros a mais...</p>
+            <p>... [Detalhes do Monge] ...</p>
+        </div>
+
+        <div id="bruxo" class="section">
+            <h2>Bruxo</h2>
+            <p>- Recebe 2 skills iniciais dependendo da afinidade escolhida...</p>
+            <p>... [Detalhes do Bruxo] ...</p>
+        </div>
+
+        <div id="mago" class="section">
+            <h2>Mago</h2>
+            <p>- Recebe as 3 skills iniciais dependendo da afinidade escolhida...</p>
+            <p>... [Detalhes do Mago] ...</p>
+        </div>
+    </div>
 </body>
 </html>
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Aelyndor RPG</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Georgia', serif;
-      background-color: #0e0e0e;
-      color: #e2e2e2;
-    }
-    header {
-      background-color: #1b1b1b;
-      padding: 20px;
-      text-align: center;
-      border-bottom: 2px solid #444;
-    }
-    nav {
-      display: flex;
-      justify-content: center;
-      background-color: #141414;
-      border-bottom: 1px solid #333;
-    }
-    nav a {
-      color: #e2e2e2;
-      text-decoration: none;
-      padding: 15px 25px;
-      display: inline-block;
-    }
-    nav a:hover {
-      background-color: #292929;
-    }
-    section {
-      max-width: 900px;
-      margin: 30px auto;
-      padding: 20px;
-      background-color: #1a1a1a;
-      border: 1px solid #333;
-      border-radius: 8px;
-    }
-    h1, h2, h3 {
-      color: #f5f5f5;
-    }
-    details {
-      margin-bottom: 15px;
-    }
-    summary {
-      font-weight: bold;
-      cursor: pointer;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>AELYNDOR RPG</h1>
-    <p>Entre o esquecimento e a verdade, nasce o herói.</p>
-  </header>
 
-  <nav>
-    <a href="#guia">Guia do Jogo</a>
-    <a href="#racas">Raças</a>
-    <a href="#skills">Skills</a>
-    <a href="#afinidades">Afinidades</a>
-  </nav>
-
-  <section id="guia">
-    <h2>Guia do Jogo</h2>
-    <p>Bem-vindo ao mundo sombrio e misterioso de Aelyndor. Aqui você encontra todas as regras, elementos e informações para jogar neste universo mégico dominado por deuses traiçoeiros, heróis esquecidos e segredos lunares.</p>
-  </section>
-
-  <section id="racas">
-    <h2>Raças</h2>
-    <details>
-      <summary>Humanos</summary>
-      <p>Versáteis e ambiciosos. Sub-raças: Nenhuma. Origem: Elvanar.</p>
-    </details>
-    <details>
-      <summary>Elfos</summary>
-      <p>Conectados à magia. Sub-raças: Elfo da Floresta, Meio-Elfo, Elfo das Trevas.</p>
-    </details>
-    <details>
-      <summary>Anões</summary>
-      <p>Fortes e orgulhosos. Sub-raças: Anão da Montanha, da Caverna e da Planície.</p>
-    </details>
-    <details>
-      <summary>Orcs</summary>
-      <p>Tribais e resistentes. Sub-raças: Clãs diversos com focos em força e honra.</p>
-    </details>
-    <details>
-      <summary>Reptilianos</summary>
-      <p>Ligados à natureza e ao ciclo. Sub-raças: Jacaré, Crocodilo, Lagartixa, Komodo.</p>
-    </details>
-    <details>
-      <summary>Tritões</summary>
-      <p>Guardiões marinhos. Sub-raças: Sofisticado, Encantador, Inquisidor.</p>
-    </details>
-    <details>
-      <summary>Dragonatos</summary>
-      <p>Descendentes dracônicos. Sub-raças: Elementais de Fogo, Água, Ar e Terra.</p>
-    </details>
-    <details>
-      <summary>Gnomos</summary>
-      <p>Curiosos e caóticos. Sub-raças: Pé-Leve e Coração Forte.</p>
-    </details>
-    <details>
-      <summary>Esqueletos</summary>
-      <p>Conscientes após a morte. Sub-raças: Engenhoso, Devorador, Robusto, Sofisticado.</p>
-    </details>
-  </section>
-
-  <section id="skills">
-    <h2>Skills</h2>
-    <p>As habilidades do jogo se dividem entre físicas (usam Energia) e mágicas (usam Mana). Cada classe possui um conjunto de skills baseado em sua especialização.</p>
-    <!-- Aqui você pode adicionar listas organizadas por classe depois -->
-  </section>
-
-  <section id="afinidades">
-    <h2>Afinidades</h2>
-    <details>
-      <summary>Fogo</summary>
-      <p>Dano explosivo, fraqueza a Água.</p>
-    </details>
-    <details>
-      <summary>Água</summary>
-      <p>Controle, cura, fraqueza a Eletricidade.</p>
-    </details>
-    <details>
-      <summary>Terra</summary>
-      <p>Defesa e resistência. Fraca contra Fogo.</p>
-    </details>
-    <details>
-      <summary>Ar</summary>
-      <p>Mobilidade, dano rápido. Fraca contra Terra.</p>
-    </details>
-    <details>
-      <summary>Psíquico</summary>
-      <p>Confusão e controle mental. Fraco contra divino.</p>
-    </details>
-    <details>
-      <summary>Divino</summary>
-      <p>Cura e bênçãos. Fraco contra magias profanas.</p>
-    </details>
-    <details>
-      <summary>Sombras</summary>
-      <p>Corrompe e enfraquece. Vulnerável à luz pura.</p>
-    </details>
-  </section>
-</body>
-</html>
